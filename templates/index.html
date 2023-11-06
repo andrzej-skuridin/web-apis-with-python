@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+{% if response.status %}
+  <h1>Message: {{ response.status }}</h1>
+{% else %}
+  <h1>Message: {{ response.data }}</h1>
+{% endif %}
+</body>
+</html>
